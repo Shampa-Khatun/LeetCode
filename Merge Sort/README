@@ -1,0 +1,15 @@
+Solution Approach: 
+
+-> Use three pointers starting from the end:
+
+    1. i points to the last valid element in nums1.
+
+    2. j points to the last element in nums2.
+
+    k points to the last position of nums1 (total size m + n).
+
+-> Compare elements pointed by i and j, place   the larger at position k.
+
+-> Move pointers accordingly and continue until all elements from nums2 are merged.
+
+-> This approach merges the arrays in-place from the back to avoid overwriting elements.
